@@ -1,0 +1,46 @@
+<!-- JS-06 DOM Manipulation -->
+<!-- Exercise #3 -->
+<!-- Write a function and call it when clicking a button to show an alert with: -->
+<!-- The number of links on the page -->
+<!-- The first link in the page -->
+<!-- The last link in the page -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Exercise#3</title>
+  </head> 
+  <body>
+    <ul class="list">
+      <ol><a href="https://www.google.com">Google</a></ol>
+      <ol><a href="https://sg.yahoo.com">Yahoo</a></ol>
+      <ol><a href="https://www.bing.com">Bing</a></ol>
+      <ol><a href="https://www.baidu.com">Baidu</a></ol>      
+      <ol><a href="https://www.aol.co.uk">AOL</a></ol>
+    </ul>
+
+
+    <!-- <a href="https://www.google.com">Google</a><br>
+    <a href="https://sg.yahoo.com">Yahoo</a><br>
+    <a href="https://www.bing.com">Bing</a><br>
+    <a href="https://www.baidu.com">Baidu</a><br>    
+    <a href="https://www.aol.co.uk">AOL</a><br>
+  -->
+
+    <button onclick="showAlert()">Page Info</button>
+    
+
+    <script>
+      function showAlert() {
+        // alert(document.querySelectorAll(".list"))
+        const allURL = window.location.protocol + "//" + window.location.pathname + window.location.search
+        // const 
+        alert(allURL)
+      }
+
+
+    </script>
+
+  </body>
+</html>
